@@ -1,5 +1,8 @@
 # Tl1
 
+[![Gem Version](https://badge.fury.io/rb/tl1.svg)](https://rubygems.org/gems/tl1)
+[![Build Status](https://travis-ci.org/bjmllr/tl1.svg)](https://travis-ci.org/bjmllr/tl1) 
+
 The TL1 protocol is used by network operators to manage optical and other
 networking equipment produced by multiple vendors. Although it is has a terse
 and unusual command syntax, it was created with the intent of being useful for
