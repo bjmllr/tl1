@@ -1,4 +1,4 @@
-# Tl1
+# TL1
 
 [![Gem Version](https://badge.fury.io/rb/tl1.svg)](https://rubygems.org/gems/tl1)
 [![Build Status](https://travis-ci.org/bjmllr/tl1.svg)](https://travis-ci.org/bjmllr/tl1) 
