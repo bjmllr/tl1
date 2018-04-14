@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 module TL1
   # A simple IO-like object that accepts a hash of string inputs and
   # corresponding outputs, useful for testing.

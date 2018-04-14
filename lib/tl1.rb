@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'tl1/ast'
 require 'tl1/command'
 require 'tl1/input_format'

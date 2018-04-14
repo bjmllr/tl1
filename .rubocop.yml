@@ -16,11 +16,18 @@ Metrics/MethodLength:
 
 Metrics/ModuleLength:
   Exclude:
+    - 'lib/tl1/platforms/bti.rb'
     - 'spec/**/*'
 
 Metrics/LineLength:
   Exclude:
     - 'spec/tl1/command_spec.rb'
+
+Naming/HeredocDelimiterNaming:
+  Enabled: false
+
+Style/CommentedKeyword:
+  Enabled: false
 
 Style/BlockDelimiters:
   Enabled: false

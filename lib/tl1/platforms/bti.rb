@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-# rubocop: disable Metrics/ModuleLength
 module TL1
   module Platforms
     module BTI

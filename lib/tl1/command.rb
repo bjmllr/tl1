@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'strscan'
 
 module TL1
@@ -75,7 +76,7 @@ module TL1
       end
 
       def scan_record(scanner)
-        record = String.new
+        record = +''
 
         scan_characters(scanner) do |char|
           case char
@@ -95,7 +96,7 @@ module TL1
       end
 
       def scan_record_quoted_string(scanner)
-        record = String.new
+        record = +''
 
         scan_characters(scanner) do |char|
           case char

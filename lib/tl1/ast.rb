@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'strscan'
 
 module TL1
@@ -33,14 +34,14 @@ module TL1
 
     module_function def split(string, delimiter)
       scanner = StringScanner.new(string)
-      array = [String.new]
+      array = [+'']
 
       loop do
         return array if scanner.eos?
         char = scanner.getch
         case char
         when delimiter
-          array << String.new
+          array << +''
         when '"'
           array.last << split_quoted(scanner)
         else
@@ -50,7 +51,7 @@ module TL1
     end
 
     module_function def split_quoted(scanner)
-      string = String.new('"')
+      string = +'"'
 
       loop do
         raise 'Unexpected end of quoted string' if scanner.eos?

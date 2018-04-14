@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 module TL1
   # A format for records appearing in output messages.
   class OutputFormat

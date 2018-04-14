@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 module TL1
   # A format for an input message.
   class InputFormat

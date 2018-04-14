@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 module TL1
   # A wrapper around an IO-like object representing a connection to a
   # TL1-capable network element.
