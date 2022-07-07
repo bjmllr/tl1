@@ -11,7 +11,7 @@ module TL1
 
     let(:act_user) { Command.new('ACT-USER::<username>:::<password>', nil) }
     let(:eqpt) { Command.new('RTRV-EQPT', eqpt_src) }
-    let(:io) { TestIO.new('RTRV-EQPT;' => eqpt_output) }
+    let(:io) { TestIO.new({ 'RTRV-EQPT;' => eqpt_output }) }
 
     let(:eqpt_output) do
       <<~EOF
@@ -64,12 +64,13 @@ module TL1
         let(:password) { 'qwer' }
 
         let(:io) do
-          TestIO.new(
+          commands = {
             "ACT-USER::#{username}:::#{password};" => <<~END
               M  100 COMPLD
               ;
             END
-          )
+          }
+          TestIO.new(commands)
         end
 
         it 'accepts keyword arguments' do
